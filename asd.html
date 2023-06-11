@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/algebra.js/0.2.3/algebra.min.js"
+    integrity="sha512-OiE3A4uqffNO68+uChIVA08aSA5rwEYnTAgth4I64dLBAi//daGZefG9FHIB7TPgPOQ++EWFOxyWu7OUeKebuQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/locale/es.js"></script>
+</head>
+
+<body>
+  <style>
+    body {
+      background: #f2f2f2;
+    }
+  </style>
+  <header class="bg-sky-700 text-white flex justify-between items-center px-10 py-5 z-40">
+    <div>
+      <a class="text-2xl m-0 self-center font-semibold whitespace-nowrap" href="#">Maths</a>
+    </div>
+    <nav class="flex justify-center">
+      <div class="cursor-pointer text-white text-3xl m-0 p-0 md:hidden">
+        <button class="menu-icon"><i class="bx bx-menu menu-button"></i></button>
+      </div>
+      <ul class="menu  flex flex-row font-semibold max-md:hidden [&>li>a]:px-4 [&>li>a]:py-2 ">
+        <li><a class="block" href="#">Inicio</a></li>
+        <li><a class="block" href="#">Info</a></li>
+        <li><a class="block" href="#">Metodos</a></li>
+        <li><a class="block" href="#">Problemas</a></li>
+        <li><a class="block" href="#">Calendario</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="bg-red-600 text-white h-full relative top-0 bottom-0">
+    <div class="flex items-center justify-between">
+      <div class="flex-1 text-left ml-12">
+        <h1 class="text-4xl mb-4 font-bold">Preparación para la PAES M1 y M2</h1>
+        <p class="text-base font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga necessitatibus
+          rerum vitae
+          eum enim nam iste quibusdam voluptatum quos amet.</p>
+      </div>
+      <div class="flex flex-1">
+        <img class="h-auto" src="img/2022_ani_cartoon_28-removebg-preview.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="flex justify-center items-center">
+    <div class="text-content max-w-3xl p-12 my-0 mx-auto">
+      <h2 class="font-bold text-xl text-center">Título de la sección</h2>
+      <div class="paragraphs shadow-2xl p-5 text-justify rounded-xl [&>p>]:mb-5 [&>p>]:">
+        <p class="text-sm mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet lacus odio, in
+          bibendum
+          justo consectetur sit amet. Mauris ultrices tortor nec ligula pellentesque dignissim.</p>
+        <p class="text-sm mb-5">Donec non tortor ligula. Suspendisse fermentum purus non velit lobortis, id congue orci
+          auctor.
+          Integer id felis ut nulla rutrum interdum.</p>
+        <p class="text-sm mb-5">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+          Sed non est
+          sed mi dictum sagittis sed non turpis. Pellentesque habitant morbi tristique senectus et netus et
+          malesuada fames ac turpis egestas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="study-section py-14 px-0 text-center">
+    <div class="study-content max-w-4xl my-0 mx-auto">
+      <h2 class="text-xl font-bold text-center">Métodos de Estudio y Consejos para la PAES M1 y M2</h2>
+      <div class="study-items flex justify-center items-center flex-wrap mt-8">
+        <div class="study-item w-80 rounded-lg shadow-lg p-5 m-3 bg-white">
+          <h3 class="text-xl mb-3">Método 1</h3>
+          <p class="text-base">Descripción del método 1.</p>
+        </div>
+        <div class="study-item w-80 rounded-lg shadow-lg p-5 m-3 bg-white">
+          <h3 class="text-xl mb-3">Método 2</h3>
+          <p class="text-base">Descripción del método 2.</p>
+        </div>
+        <div class="study-item w-80 rounded-lg shadow-lg p-5 m-3 bg-white">
+          <h3 class="text-xl mb-3">Método 3</h3>
+          <p class="text-base">Descripción del método 2.</p>
+        </div>
+        <div class="study-item w-80 rounded-lg shadow-lg p-5 m-3 bg-white">
+          <h3 class="text-xl mb-3">Método 4</h3>
+          <p class="text-base">Descripción del método 2.</p>
+        </div>
+        <!-- Agrega más elementos de estudio aquí -->
+      </div>
+    </div>
+  </section>
+
+  <section class="problem-section text-center max-w-4xl my-0 mx-auto p-5">
+    <h2 class="text-2xl font-bold mb-6">Generador de Problemas de Matemáticas</h2>
+    <div class="flex m-0 p-0 justify-center items-center">
+      <img class="h-44 mb-7" src="img/8196397-removebg-preview.png" alt="">
+    </div>
+    <p class="text-sm text-center justify-center mx-20 mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+      laudantium, dignissimos tempora dolorem porro eveniet quisquam excepturi libero doloremque officiis officia, sed
+      consectetur rerum aliquam quas veniam repudiandae illum ex omnis iusto incidunt sit.</p>
+
+    <div class="problem-options mb-14">
+      <label for="problem-type">Selecciona el tipo de problema:</label>
+      <select id="problem-type">
+        <option value="porcentaje">Porcentaje</option>
+        <option value="numeros-enteros">Números enteros</option>
+        <option value="numeros-racionales">Simplificacón de fracciones</option>
+        <option value="potencias-raices">Potencias y raíces</option>
+        <option value="logaritmos">Logaritmos</option>
+        <option value="geometria">Geometría</option>
+        <option value="geometria3d">Geometría Figuras 3D</option>
+        <option value="medidas-tendencia-central">Medidas de tendencia central y rango</option>
+      </select>
+    </div>
+    <div id="problem-container" class="mb-5"></div>
+    <div id="solution-container" class="mb-5"></div>
+    <button id="generate-btn">Generar Problema Nuevo</button>
+    <button id="solution-btn">Ver Solución</button>
+  </section>
+
+  <section class="flex justify-center items-center">
+    <div class="text-content max-w-3xl p-12 my-0 mx-auto">
+      <h2 class="font-bold text-xl text-center">Título de la sección</h2>
+      <div class="paragraphs shadow-2xl p-5 text-justify rounded-xl [&>p>]:mb-5 [&>p>]:">
+        <p class="text-sm mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet lacus odio, in
+          bibendum
+          justo consectetur sit amet. Mauris ultrices tortor nec ligula pellentesque dignissim.</p>
+        <p class="text-sm mb-5">Donec non tortor ligula. Suspendisse fermentum purus non velit lobortis, id congue orci
+          auctor.
+          Integer id felis ut nulla rutrum interdum.</p>
+        <p class="text-sm mb-5">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+          Sed non est
+          sed mi dictum sagittis sed non turpis. Pellentesque habitant morbi tristique senectus et netus et
+          malesuada fames ac turpis egestas.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id='calendar'></div>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .problem-section p {
+      font-size: 16px;
+      color: #555555;
+    }
+
+    .problem-section button {
+      background-color: #0088cc;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .problem-section button:hover {
+      background-color: #006699;
+    }
+
+    .problem-section input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #333333;
+    }
+
+    .problem-section .solution {
+      background-color: #ffffff;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #333333;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 74px;
+        right: 0;
+        background-color: #335B6F;
+        padding: 20px;
+        width: 100%;
+        z-index: 10;
+      }
+
+      .menu.active li {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      .menu.active li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .menu.active li a {
+        display: block;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        margin-left: 20px;
+        text-align: left;
+        padding: 10px;
+      }
+    }
+
+    #calendar {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .fc-header-toolbar {
+      background-color: #333333;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
+
+    .fc-header-toolbar .fc-toolbar-chunk {
+      display: flex;
+      align-items: center;
+    }
+
+    .fc-toolbar-title {
+      flex: 1;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .fc-button-primary {
+      background-color: #1a8cff;
+      border-color: #1a8cff;
+    }
+
+    .fc-button-primary:hover {
+      background-color: #0066cc;
+      border-color: #0066cc;
+    }
+
+    .fc-daygrid-event {
+      background-color: #007bff;
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 5px;
+      width: 90%;
+      white-space: normal;
+      /* Permite que el texto se ajuste automáticamente */
+    }
+
+    .fc-daygrid-event:hover {
+      background-color: #0066cc;
+    }
+  </style>
+  <script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const menu = document.querySelector('.menu');
+
+    menuIcon.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    events: [
+      {
+        title: 'Propiedades de las potencias',
+        start: '2023-06-10'
+      },
+      {
+        title: 'Geometría',
+        start: '2023-06-12',
+        end: '2023-06-15'
+      },
+    ],locales: 'es', firstDay: 1,
+  });
+  calendar.render();
+});
+
+  </script>
+</body>
+
+</html>

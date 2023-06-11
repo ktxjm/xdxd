@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/algebra.js/0.2.3/algebra.min.js"
+        integrity="sha512-OiE3A4uqffNO68+uChIVA08aSA5rwEYnTAgth4I64dLBAi//daGZefG9FHIB7TPgPOQ++EWFOxyWu7OUeKebuQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/locale/es.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Maths</h1>
+        </div>
+        <nav>
+            <div class="menu-icon">
+                <i class="bx bx-menu"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">ajskd</a></li>
+                <li><a href="#">asdassad</a></li>
+                <li><a href="#">asdasas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>PAES M1 y M2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum ea mollitia fugiat ipsam
+                    praesentium? Corporis, ratione? Quo quasi tenetur nobis? Necessitatibus, voluptate.</p>
+            </div>
+            <div class="hero-image">
+                <img src="img/2022_ani_cartoon_28-removebg-preview.png" alt="Imagen del héroe">
+            </div>
+        </div>
+    </section>
+
+    <section class="text-section">
+        <div class="text-content">
+            <h2>Título de la sección</h2>
+            <div class="paragraphs">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet lacus odio, in bibendum
+                    justo consectetur sit amet. Mauris ultrices tortor nec ligula pellentesque dignissim.</p>
+                <p>Donec non tortor ligula. Suspendisse fermentum purus non velit lobortis, id congue orci auctor.
+                    Integer id felis ut nulla rutrum interdum.</p>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed non est
+                    sed mi dictum sagittis sed non turpis. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="study-section">
+        <div class="study-content">
+            <h2>Métodos de Estudio y Consejos para la PAES M1 y M2</h2>
+            <div class="study-items">
+                <div class="study-item">
+                    <h3>Método 1</h3>
+                    <p>Descripción del método 1.</p>
+                </div>
+                <div class="study-item">
+                    <h3>Método 2</h3>
+                    <p>Descripción del método 2.</p>
+                </div>
+                <div class="study-item">
+                    <h3>Método 3</h3>
+                    <p>Descripción del método 2.</p>
+                </div>
+                <div class="study-item">
+                    <h3>Método 4</h3>
+                    <p>Descripción del método 2.</p>
+                </div>
+                <!-- Agrega más elementos de estudio aquí -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="problem-section text-center max-w-4xl my-0 mx-auto p-5">
+        <h2 class="text-2xl font-bold mb-6">Generador de Problemas de Matemáticas</h2>
+        <div class="flex m-0 p-0 justify-center items-center">
+          <img class="h-44 mb-7" src="img/8196397-removebg-preview.png" alt="">
+        </div>
+        <p class="text-sm text-center justify-center mx-20 mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+          laudantium, dignissimos tempora dolorem porro eveniet quisquam excepturi libero doloremque officiis officia, sed
+          consectetur rerum aliquam quas veniam repudiandae illum ex omnis iusto incidunt sit.</p>
+    
+        <div class="problem-options mb-14">
+          <label for="problem-type">Selecciona el tipo de problema:</label>
+          <select id="problem-type">
+            <option value="porcentaje">Porcentaje</option>
+            <option value="numeros-enteros">Números enteros</option>
+            <option value="numeros-racionales">Simplificacón de fracciones</option>
+            <option value="potencias-raices">Potencias y raíces</option>
+            <option value="logaritmos">Logaritmos</option>
+            <option value="geometria">Geometría</option>
+            <option value="geometria3d">Geometría Figuras 3D</option>
+            <option value="medidas-tendencia-central">Medidas de tendencia central y rango</option>
+          </select>
+        </div>
+        <div id="problem-container" class="mb-5"></div>
+        <div id="solution-container" class="mb-5"></div>
+        <button id="generate-btn">Generar Problema Nuevo</button>
+        <button id="solution-btn">Ver Solución</button>
+      </section>
+
+
+
+
+
+
+
+
+
+    <div id='calendar'></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

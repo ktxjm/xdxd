@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/algebra.js/0.2.3/algebra.min.js"
+        integrity="sha512-OiE3A4uqffNO68+uChIVA08aSA5rwEYnTAgth4I64dLBAi//daGZefG9FHIB7TPgPOQ++EWFOxyWu7OUeKebuQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/locale/es.js"></script>
+
+</head>
+
+<body>
+    <div id='calendar'></div>
+    <script type='importmap'>
+        {
+          "imports": {
+            "@fullcalendar/core": "https://cdn.skypack.dev/@fullcalendar/core@6.1.8",
+            "@fullcalendar/daygrid": "https://cdn.skypack.dev/@fullcalendar/daygrid@6.1.8"
+          }
+        }
+      </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: [
+                    {
+                        title: 'Propiedades de las potencias',
+                        start: '2023-06-10'
+                    },
+                    {
+                        title: 'Geometría',
+                        start: '2023-06-12',
+                        end: '2023-06-15'
+                    },
+                ], locales: 'es', firstDay: 1,
+            });
+            calendar.render();
+        });
+
+
+    </script>
+    <style>
+        #calendar {
+
+            margin: 0 auto;
+        }
+
+        .fc-header-toolbar {
+            background-color: #333333;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .fc-header-toolbar .fc-toolbar-chunk {
+            display: flex;
+            align-items: center;
+        }
+
+        .fc-toolbar-title {
+            flex: 1;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .fc-button-primary {
+            background-color: #1a8cff;
+            border-color: #1a8cff;
+        }
+
+        .fc-button-primary:hover {
+            background-color: #0066cc;
+            border-color: #0066cc;
+        }
+
+        .fc-daygrid-event {
+            background-color: #007bff;
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 5px;
+            width: 90%;
+            white-space: normal;
+            /* Permite que el texto se ajuste automáticamente */
+        }
+
+        .fc-daygrid-event:hover {
+            background-color: #0066cc;
+        }
+    </style>
+</body>
+
+</html>

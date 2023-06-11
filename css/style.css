@@ -1,0 +1,398 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #335B6F;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .logo h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-right: 10px;
+    display: none;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+    padding: 0;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    color: #D9E6ED;
+  }
+  
+  .hero {
+    position: relative;
+    padding: 100px;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #335B6F 0%, #05151C 100%);
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-text {
+    flex: 1;
+    text-align: left;
+    margin-right: 50px;
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 1055px) {
+    .hero-content {
+      flex-direction: column;
+    }
+  
+    .hero-text {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .hero-image {
+      order: -1;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    /* Menú responsive */
+    .menu {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .menu-icon i {
+      cursor: pointer;
+      color: #FFFFFF;
+      font-size: 24px;
+    }
+  
+    .menu.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #335B6F;
+      padding: 20px;
+      width: 100%;
+      z-index: 10;
+    }
+  
+    .menu.active li {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .menu.active li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    /* Nuevos estilos para los enlaces */
+    .menu.active li a {
+      display: block;
+      color: #FFFFFF;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      margin-left: 20px;
+      text-align: left;
+      padding: 10px;
+    }
+  
+    /* Estilos para dispositivos móviles */
+    .hero {
+      padding: 50px;
+    }
+  
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-text,
+    .hero-image {
+      text-align: center;
+    }
+  }
+
+  
+
+
+  .problem-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .problem-options {
+    margin-bottom: 20px;
+  }
+  
+  #problem-container {
+    margin-bottom: 20px;
+  }
+  
+  #solution-container {
+    margin-top: 20px;
+  }
+  
+  #solution-container .solution {
+    margin-bottom: 10px;
+  }
+  
+  .problem-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .problem-section p {
+    font-size: 16px;
+    color: #555555;
+  }
+  
+  .problem-section button {
+    background-color: #0088cc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .problem-section button:hover {
+    background-color: #006699;
+  }
+  
+  .problem-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333333;
+  }
+  
+  .problem-section .solution {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333333;
+  }
+  
+
+
+
+
+
+
+
+.study-section {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.study-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.study-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.study-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.study-item {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+}
+
+.study-item h3 {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.study-item p {
+  font-size: 16px;
+  color: #555555;
+}
+
+
+
+
+
+
+
+.text-section {
+  background-color: #f2f2f2;
+  padding: 50px 20px; /* Espacio en ambos lados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content {
+  max-width: 800px;
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.text-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}
+
+.paragraphs {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: justify;
+}
+
+.paragraphs p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555555;
+}
+
+
+
+
+#calendar {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.fc-header-toolbar {
+  background-color: #333333;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.fc-header-toolbar .fc-toolbar-chunk {
+  display: flex;
+  align-items: center;
+}
+
+.fc-toolbar-title {
+  flex: 1;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.fc-button-primary {
+  background-color: #1a8cff;
+  border-color: #1a8cff;
+}
+
+.fc-button-primary:hover {
+  background-color: #0066cc;
+  border-color: #0066cc;
+}
+
+.fc-daygrid-event {
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  width: 90%;
+  white-space: normal; /* Permite que el texto se ajuste automáticamente */
+}
+.fc-daygrid-event:hover {
+  background-color: #0066cc;
+}
